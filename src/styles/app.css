@@ -1,44 +1,42 @@
 @import 'variables.css';
-
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+}
 
-  *,
-  *:before,
-  *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
 }
 
 html {
-  font-size: 14px;
-  box-sizing: border-box;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
 body {
-  font-size: 1rem;
-  font-weight: normal;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  padding-top: var(--header-height);
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    padding-top: var(--header-height);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 button {
-  background-color: transparent;
-  cursor: pointer;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 img {
-  max-width: 100%;
-  vertical-align: middle;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
 h1,
@@ -50,5 +48,5 @@ h6,
 b,
 strong,
 label {
-  font-weight: 600;
+    font-weight: 600;
 }
