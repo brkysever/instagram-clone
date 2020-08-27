@@ -1,12 +1,12 @@
 <template>
-  <component :is="tag" :class="size">
+  <components :is="tag" :class="size">
     <slot />
-  </component>
+  </components>
 </template>
 
 <script>
 export default {
-  name: 'Text',
+  name: 'CustomText',
   props: {
     tag: {
       type: String,
