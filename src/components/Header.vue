@@ -7,18 +7,18 @@
         <input type="text" placeholder="Search" />
       </form>
 
-      <nav>
+      <nav class="navi">
         <router-link to="/">
-          <IconHome />
-          <IconHomeFill />
+          <IconHomeFill v-if="$route.name == 'Home'" />
+          <IconHome v-else />
         </router-link>
         <router-link to="/direct">
-          <IconDirect />
-          <IconDirectFill />
+          <IconDirectFill v-if="$route.name == 'Direct'" />
+          <IconDirect v-else />
         </router-link>
         <router-link to="/explore">
-          <IconExplore />
-          <IconExploreFill />
+          <IconExploreFill v-if="$route.name == 'Explore'" />
+          <IconExplore v-else />
         </router-link>
         <router-link to="/profile">Profile</router-link>
       </nav>
@@ -53,16 +53,17 @@ export default {
 .header {
   border-bottom: 1px solid rgb(var(--b6a));
 }
+
 .header-container {
+  height: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  padding: 20px;
 }
+
 .logo {
-  font-weight: bold;
   font-size: 1.6rem;
-  text-decoration: none;
+  font-weight: bold;
 }
 
 .search {
@@ -76,6 +77,16 @@ export default {
     border-radius: 4px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+.navi {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    margin-left: 20px;
   }
 }
 </style>
