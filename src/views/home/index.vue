@@ -33,6 +33,48 @@
         incidunt deserunt enim possimus cumque quis quidem adipisci cum
         laboriosam! Ad.
       </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
+        incidunt deserunt enim possimus cumque quis quidem adipisci cum
+        laboriosam! Ad.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
+        incidunt deserunt enim possimus cumque quis quidem adipisci cum
+        laboriosam! Ad.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
+        incidunt deserunt enim possimus cumque quis quidem adipisci cum
+        laboriosam! Ad.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
+        incidunt deserunt enim possimus cumque quis quidem adipisci cum
+        laboriosam! Ad.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
+        incidunt deserunt enim possimus cumque quis quidem adipisci cum
+        laboriosam! Ad.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
+        incidunt deserunt enim possimus cumque quis quidem adipisci cum
+        laboriosam! Ad.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
+        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
+        incidunt deserunt enim possimus cumque quis quidem adipisci cum
+        laboriosam! Ad.
+      </p>
     </div>
     <div class="sidebar">
       <p>
@@ -59,8 +101,23 @@ export default {
 
 <style scoped>
 .home {
-  display: grid;
-  grid-template-columns: 615px 1fr;
-  grid-gap: 30px;
+  max-width: 605px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (--t) {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 295px;
+    grid-gap: 30px;
+  }
+}
+
+.sidebar {
+  display: none;
+
+  @media (--t) {
+    display: block;
+  }
 }
 </style>

@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 const routes = [{
         path: '/',
         name: 'Home',
-        components: Home
+        component: Home
     },
     {
         path: '/direct',
@@ -15,6 +15,7 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "profile" */ '../views/direct'),
     },
+
     {
         path: '/explore',
         name: 'Explore',
