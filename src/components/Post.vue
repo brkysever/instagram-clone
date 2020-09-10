@@ -9,7 +9,7 @@
             <CustomText tag="b">brkysever</CustomText>
           </div>
           <div>
-            <CustomText size="xsmall">Besiktas, Istanbul</CustomText>
+            <CustomText size="xsmall">Sant'Andrea della Valle</CustomText>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
     <!-- media -->
     <div class="post-media">
       <img
-        src="https://instagram.fist13-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/119042163_159298435792724_9058683708196212866_n.jpg?_nc_ht=instagram.fist13-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=5gc2hc_QYXEAX9KtVht&oh=e4a9aec4e262a4cec39930613b7b2846&oe=5F855A54"
+        src="https://instagram.fist13-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/69252532_710543112749893_8501977450192107870_n.jpg?_nc_ht=instagram.fist13-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=07-PfXCU5J4AX-0vMPb&oh=fd04a97e40b385ecf59e3963558867e9&oe=5F8284CE"
         alt=""
       />
     </div>
@@ -44,11 +44,34 @@
       </button>
     </div>
 
-    <!-- view count -->
-
     <div class="view-count section">
       <custom-text tag="b">1.345 beğenme</custom-text>
     </div>
+    <div class="view-count section">
+      <custom-text tag="b">brkysever </custom-text>
+      <custom-text>Sant'Andrea della Valle</custom-text>
+    </div>
+    <div class="comment section">
+      <custom-text>48 yorumun tümünü gör </custom-text>
+    </div>
+    <div class="view-count section">
+      <custom-text tag="b">annacoach </custom-text>
+      <custom-text>Beautiful picture👍</custom-text>
+    </div>
+    <div class="view-count section">
+      <custom-text tag="b">jenniferlu </custom-text>
+      <custom-text>Roads of Rome</custom-text>
+    </div>
+    <div class="comment section">
+      <custom-text class="xxsmall">30 DAKİKA ÖNCE</custom-text>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
     <!-- comment list -->
 
@@ -88,8 +111,13 @@ export default {
 }
 
 .section {
+  padding-top: 8px;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.comment {
+  color: rgba(var(--f52, 142, 142, 142), 1);
 }
 
 .header {
