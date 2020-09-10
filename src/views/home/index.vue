@@ -3,86 +3,13 @@
     <div class="timeline">
       <h1>Home</h1>
 
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
+      <br />
+      <br />
+      <br />
+
+      <Post />
     </div>
     <div class="sidebar">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
         veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
@@ -94,8 +21,11 @@
 </template>
 
 <script>
+import Post from '@/components/Post'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: { Post }
 }
 </script>
 
