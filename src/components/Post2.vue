@@ -1,15 +1,14 @@
 <template>
   <div class="post">
-    <!-- header -->
     <header class="header section">
       <div class="header-author">
-        <Avatar :size="40" />
+        <Avatar2 :size="40" />
         <div class="header-author-info">
           <div>
-            <CustomText tag="b">brkysever</CustomText>
+            <CustomText tag="b">ogocanb</CustomText>
           </div>
           <div>
-            <CustomText size="xsmall">Sant'Andrea della Valle</CustomText>
+            <CustomText size="xsmall"></CustomText>
           </div>
         </div>
       </div>
@@ -23,7 +22,7 @@
     <!-- media -->
     <div class="post-media">
       <img
-        src="https://instagram.fist13-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/69252532_710543112749893_8501977450192107870_n.jpg?_nc_ht=instagram.fist13-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=07-PfXCU5J4AX-0vMPb&oh=fd04a97e40b385ecf59e3963558867e9&oe=5F8284CE"
+        src="https://i.ibb.co/5hXPCnP/Whats-App-Image-2020-09-11-at-7-18-06-PM.jpg"
         alt=""
       />
     </div>
@@ -31,7 +30,7 @@
     <!-- actions -->
     <div class="action-buttons section">
       <button type="button">
-        <IconLike />
+        <IconLikeFill />
       </button>
       <button type="button">
         <IconComment />
@@ -45,14 +44,14 @@
     </div>
 
     <div class="view-count section">
-      <custom-text tag="b">1.345 beğenme</custom-text>
+      <custom-text tag="b">1 beğenme</custom-text>
     </div>
     <div class="view-count section">
-      <custom-text tag="b">brkysever </custom-text>
-      <custom-text>Sant'Andrea della Valle</custom-text>
+      <custom-text tag="b">ogocanb</custom-text>
+      <custom-text></custom-text>
     </div>
     <div class="comment section">
-      <custom-text>48 yorumun tümünü gör </custom-text>
+      <custom-text>1 yorumun tümünü gör </custom-text>
     </div>
     <div class="view-count section">
       <custom-text tag="b">annacoach </custom-text>
@@ -63,7 +62,7 @@
       <custom-text>Roads of Rome</custom-text>
     </div>
     <div class="comment section">
-      <custom-text class="xxsmall">30 DAKİKA ÖNCE</custom-text>
+      <custom-text class="xxsmall">45 DAKİKA ÖNCE</custom-text>
     </div>
 
     <br />
@@ -71,10 +70,10 @@
 </template>
 
 <script>
-import Avatar from '@/components/Avatar'
+import Avatar2 from '@/components/Avatar2'
 import CustomText from '@/components/CustomText'
 import IconMore from '@/icons/more.svg'
-import IconLike from '@/icons/like.svg'
+import IconLikeFill from '@/icons/like-fill.svg'
 import IconComment from '@/icons/comment.svg'
 import IconDirect from '@/icons/direct.svg'
 import IconSave from '@/icons/save.svg'
@@ -82,19 +81,20 @@ import IconSave from '@/icons/save.svg'
 export default {
   name: 'Post',
   components: {
-    IconLike,
+    IconLikeFill,
     IconComment,
     IconDirect,
     IconSave,
     IconMore,
     CustomText,
-    Avatar
+    Avatar2
   }
 }
 </script>
 
 <style scoped>
 .post {
+  margin-top: 60px;
   border-radius: 3px;
   border: 1px solid rgb(var(--b6a));
   background-color: white;

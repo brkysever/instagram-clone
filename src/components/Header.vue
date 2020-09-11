@@ -4,7 +4,7 @@
       <router-link to="/" class="logo">Instagram</router-link>
 
       <form class="search">
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Ara" />
       </form>
 
       <nav class="navi">

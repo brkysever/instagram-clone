@@ -1,13 +1,13 @@
 <template>
   <div class="home">
     <div class="timeline">
-      <h1>Home</h1>
-
       <br />
       <br />
       <br />
 
       <Post />
+      <Post2 />
+      <Post3 />
     </div>
     <div class="sidebar">
       <p>
@@ -22,10 +22,12 @@
 
 <script>
 import Post from '@/components/Post'
+import Post2 from '@/components/Post2'
+import Post3 from '@/components/Post3'
 
 export default {
   name: 'Home',
-  components: { Post }
+  components: { Post, Post2, Post3 }
 }
 </script>
 
