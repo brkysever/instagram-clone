@@ -1,0 +1,104 @@
+<template>
+  <div class="sidebar">
+    <Avatar :size="55" />
+    <div class="header-author-info">
+      <div>
+        <CustomText tag="b">brkysever</CustomText>
+      </div>
+      <div class="username">
+        <CustomText size="small">Berkay Sever</CustomText>
+      </div>
+    </div>
+    <div class="t1">
+      <CustomText tag="b">Senin İçin Öneriler</CustomText>
+    </div>
+
+    <div class="users">
+      <div>
+        <CustomText tag="b">brkysever</CustomText>
+        <img
+          class="user"
+          src="https://randomuser.me/api/portraits/men/32.jpg"
+        />
+      </div>
+      <div>
+        <img
+          class="user"
+          src="https://randomuser.me/api/portraits/men/78.jpg"
+        />
+      </div>
+      <div>
+        <img
+          class="user"
+          src="https://randomuser.me/api/portraits/women/2.jpg"
+        />
+      </div>
+      <div>
+        <img
+          class="user"
+          src="https://randomuser.me/api/portraits/men/17.jpg"
+        />
+      </div>
+      <div>
+        <img
+          class="user"
+          src="https://randomuser.me/api/portraits/women/26.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import Avatar from '@/components/Avatar'
+import CustomText from '@/components/CustomText'
+export default {
+  name: 'Sidebar',
+  components: { Avatar, CustomText }
+}
+</script>
+
+<style scoped>
+.sidebar {
+  position: fixed;
+  display: flex;
+
+  @media (--t) {
+    display: flex;
+    align-items: center;
+  }
+}
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  &-author {
+    display: flex;
+
+    &-info {
+      margin-left: 16px;
+    }
+  }
+}
+.username {
+  color: rgba(var(--f52, 142, 142, 142), 1);
+}
+.t1 {
+  position: absolute;
+  top: 75px;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+}
+.users {
+  position: absolute;
+  top: 150px;
+  margin-top: -30px;
+}
+.user {
+  display: flex;
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+</style>

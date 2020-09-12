@@ -21,10 +21,7 @@
 
     <!-- media -->
     <div class="post-media">
-      <img
-        src="https://i.ibb.co/5hXPCnP/Whats-App-Image-2020-09-11-at-7-18-06-PM.jpg"
-        alt=""
-      />
+      <img src="https://i.ibb.co/DDRxn8W/pp.jpg" alt="" />
     </div>
 
     <!-- actions -->
@@ -54,12 +51,12 @@
       <custom-text>1 yorumun tümünü gör </custom-text>
     </div>
     <div class="view-count section">
-      <custom-text tag="b">annacoach </custom-text>
-      <custom-text>Beautiful picture👍</custom-text>
+      <custom-text tag="b">mariopalmer </custom-text>
+      <custom-text>👍</custom-text>
     </div>
     <div class="view-count section">
-      <custom-text tag="b">jenniferlu </custom-text>
-      <custom-text>Roads of Rome</custom-text>
+      <custom-text tag="b">nico.b </custom-text>
+      <custom-text>Nice</custom-text>
     </div>
     <div class="comment section">
       <custom-text class="xxsmall">45 DAKİKA ÖNCE</custom-text>

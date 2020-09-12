@@ -1,21 +1,12 @@
 <template>
   <div class="home">
     <div class="timeline">
-      <br />
-      <br />
-      <br />
-
       <Post />
       <Post2 />
       <Post3 />
     </div>
     <div class="sidebar">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis
-        veniam blanditiis molestiae illum libero rerum veritatis, officia nemo
-        incidunt deserunt enim possimus cumque quis quidem adipisci cum
-        laboriosam! Ad.
-      </p>
+      <Sidebar />
     </div>
   </div>
 </template>
@@ -24,10 +15,11 @@
 import Post from '@/components/Post'
 import Post2 from '@/components/Post2'
 import Post3 from '@/components/Post3'
+import Sidebar from '@/components/Sidebar'
 
 export default {
   name: 'Home',
-  components: { Post, Post2, Post3 }
+  components: { Post, Post2, Post3, Sidebar }
 }
 </script>
 
@@ -42,14 +34,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr 295px;
     grid-gap: 30px;
-  }
-}
-
-.sidebar {
-  display: none;
-
-  @media (--t) {
-    display: block;
   }
 }
 </style>
