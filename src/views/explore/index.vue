@@ -42,14 +42,28 @@ export default {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media (--t) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .exploareimage {
   object-fit: cover;
-  padding: 10px;
-  height: 300px;
-  width: 300px;
-  max-width: 100%;
-  transition: 0.3s ease;
+  padding: 5px;
+  height: 200px;
+  width: 200px;
+
+  @media (--t) {
+    object-fit: cover;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+    transition: 0.3s ease;
+  }
 }
 </style>
