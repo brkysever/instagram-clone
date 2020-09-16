@@ -53,9 +53,9 @@ export default {
 
 .exploareimage {
   object-fit: cover;
-  padding: 5px;
-  height: 300px;
-  width: 300px;
+  padding: 8px;
+  height: 310px;
+  width: 310px;
 
   @media (--t) {
     object-fit: cover;
