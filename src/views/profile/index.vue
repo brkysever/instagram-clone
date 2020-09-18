@@ -137,11 +137,23 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
-  width: 50%;
+  width: 70%;
   max-width: 400px;
   background-color: #fff;
   border-radius: 16px;
   padding: 25px;
+  @media (--t) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    width: 50%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 25px;
+  }
 }
 
 .modal-overlay {
