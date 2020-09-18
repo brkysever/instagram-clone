@@ -1,6 +1,6 @@
 <template>
   <div class="profile">
-    <div class="anakart">
+    <div class="profileCard">
       <button class="button" @click="showModal = true">
         <Avatar class="profilAvatar" />
       </button>
@@ -30,52 +30,51 @@
       <div class="card">
         <Customtext class="nick">brkysever</Customtext>
         <button class="settingButton">Profili Düzenle</button>
-
-        <!-- ------------------------------------------------ -->
-
-        <button @click="showModal2 = true">
-          <IconMore class="moreicon" />
-        </button>
-
-        <transition name="fade" appear>
-          <div
-            class="modal-overlay"
-            v-if="showModal2"
-            @click="showModal2 = false"
-          ></div>
-        </transition>
-        <transition name="slide" appear>
-          <div class="modal" v-if="showModal2">
-            <CustomText size="small" tag="p" class="modalText5"
-              >Şifreyi Değiştir</CustomText
-            >
-            <CustomText size="small" tag="p" class="modalText4"
-              >Ad Etiketi</CustomText
-            >
-            <CustomText size="small" tag="p" class="modalText4"
-              >Uygulamalar ve İnternet Siteleri
-            </CustomText>
-            <CustomText size="small" tag="p" class="modalText4"
-              >Bildirimler</CustomText
-            >
-            <CustomText size="small" tag="p" class="modalText4"
-              >Gizlilik ve Güvenlik</CustomText
-            >
-            <CustomText size="small" tag="p" class="modalText4"
-              >Giriş Hareketleri</CustomText
-            >
-            <CustomText size="small" tag="p" class="modalText4"
-              >Instagram'dan E-postalar</CustomText
-            >
-            <CustomText size="small" tag="p" class="modalText4"
-              >Sorun Bildirimler</CustomText
-            >
-            <CustomText size="small" tag="p" class="modalText4"
-              >Çıkış Yap</CustomText
-            >
-          </div>
-        </transition>
       </div>
+      <!-- ------------------------------------------------ -->
+
+      <button @click="showModal2 = true" class="moreicon">
+        <IconMore />
+      </button>
+
+      <transition name="fade" appear>
+        <div
+          class="modal-overlay"
+          v-if="showModal2"
+          @click="showModal2 = false"
+        ></div>
+      </transition>
+      <transition name="slide" appear>
+        <div class="modal" v-if="showModal2">
+          <CustomText size="small" tag="p" class="modalText5"
+            >Şifreyi Değiştir</CustomText
+          >
+          <CustomText size="small" tag="p" class="modalText4"
+            >Ad Etiketi</CustomText
+          >
+          <CustomText size="small" tag="p" class="modalText4"
+            >Uygulamalar ve İnternet Siteleri
+          </CustomText>
+          <CustomText size="small" tag="p" class="modalText4"
+            >Bildirimler</CustomText
+          >
+          <CustomText size="small" tag="p" class="modalText4"
+            >Gizlilik ve Güvenlik</CustomText
+          >
+          <CustomText size="small" tag="p" class="modalText4"
+            >Giriş Hareketleri</CustomText
+          >
+          <CustomText size="small" tag="p" class="modalText4"
+            >Instagram'dan E-postalar</CustomText
+          >
+          <CustomText size="small" tag="p" class="modalText4"
+            >Sorun Bildirimler</CustomText
+          >
+          <CustomText size="small" tag="p" class="modalText4"
+            >Çıkış Yap</CustomText
+          >
+        </div>
+      </transition>
     </div>
     <div id="nav">
       <router-link to="/profile">Post</router-link> |
@@ -109,10 +108,28 @@ export default {
 </script>
 
 <style scoped>
+.profileCard {
+  display: flex;
+}
+.moreicon {
+  margin-top: -55px;
+  margin-right: 80px;
+  @media (--t) {
+    width: 1px;
+    height: 1px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}
 .profilAvatar {
-  width: 150px;
-  padding-left: 10px;
-  margin-top: -10px;
+  width: 120px;
+  margin-left: 20px;
+  margin-top: -20px;
+  @media (--t) {
+    width: 150px;
+    margin-left: 80px;
+    margin-top: -10px;
+  }
 }
 .modal {
   position: fixed;
@@ -126,6 +143,7 @@ export default {
   border-radius: 16px;
   padding: 25px;
 }
+
 .modal-overlay {
   position: absolute;
   top: 0;
@@ -135,7 +153,6 @@ export default {
   z-index: 98;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 .fade-enter,
 .fade-leave-to {
   opacity: 1;
@@ -182,10 +199,12 @@ export default {
   text-align: center;
 }
 .nick {
-  font-size: 20px;
+  padding-left: 20px;
+  font-size: 25px;
   font-weight: lighter;
   color: rgba(var(--i1d, 38, 38, 38), 1);
   @media (--t) {
+    padding-left: 70px;
     font-size: 28px;
     font-weight: lighter;
     color: rgba(var(--i1d, 38, 38, 38), 1);
@@ -194,14 +213,24 @@ export default {
 .settingButton {
   background-color: transparent;
   border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
-  color: rgba(var(--f75, 38, 38, 38), 1);
   border-radius: 4px;
-  box-sizing: border-box;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 200;
   padding: 5px 9px;
   text-align: center;
   margin-left: 10px;
+  @media (--t) {
+    background-color: transparent;
+    border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
+    color: rgba(var(--f75, 38, 38, 38), 1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    margin-left: 10px;
+  }
 }
 .button {
   outline: transparent;
