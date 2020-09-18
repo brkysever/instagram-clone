@@ -119,10 +119,12 @@ export default {
 
 <style scoped>
 .sidebar {
+  cursor: pointer;
   position: fixed;
   display: flex;
 
   @media (--t) {
+    cursor: pointer;
     display: flex;
     align-items: center;
   }
