@@ -3,16 +3,18 @@
     <!-- header -->
     <header class="header section">
       <div class="header-author">
-        <Avatar :size="40" />
+        <Avatar :src="avatarUrl" :size="40" />
+
         <div class="header-author-info">
           <div>
-            <CustomText tag="b">brkysever</CustomText>
+            <CustomText tag="b">{{ userName }}</CustomText>
           </div>
           <div>
-            <CustomText size="xsmall">Sant'Andrea della Valle</CustomText>
+            <CustomText size="xsmall">{{ location }}</CustomText>
           </div>
         </div>
       </div>
+
       <div class="header-more">
         <button type="button">
           <IconMore />
@@ -22,10 +24,7 @@
 
     <!-- media -->
     <div class="post-media">
-      <img
-        src="https://instagram.fist13-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/69252532_710543112749893_8501977450192107870_n.jpg?_nc_ht=instagram.fist13-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=07-PfXCU5J4AX-0vMPb&oh=fd04a97e40b385ecf59e3963558867e9&oe=5F8284CE"
-        alt=""
-      />
+      <img :src="media" />
     </div>
 
     <!-- actions -->
@@ -47,21 +46,25 @@
     <div class="view-count section">
       <custom-text tag="b">1.345 beğenme</custom-text>
     </div>
+
     <div class="view-count section">
       <custom-text tag="b">brkysever </custom-text>
       <custom-text>Sant'Andrea della Valle</custom-text>
     </div>
-    <div class="comment section">
-      <custom-text>48 yorumun tümünü gör </custom-text>
+
+    <div class="comment section" v-if="totalCommentCount">
+      <custom-text>{{ totalCommentCount }} yorumun tümünü gör </custom-text>
     </div>
-    <div class="view-count section">
-      <custom-text tag="b">annacoach </custom-text>
-      <custom-text>Beautiful picture👍</custom-text>
+
+    <div
+      v-for="comment of lastComments"
+      :key="comment.commentId"
+      class="view-count section"
+    >
+      <custom-text tag="b">{{ comment.username }} </custom-text>
+      <custom-text>{{ comment.comment }}</custom-text>
     </div>
-    <div class="view-count section">
-      <custom-text tag="b">jenniferlu </custom-text>
-      <custom-text>Roads of Rome</custom-text>
-    </div>
+
     <div class="comment section">
       <custom-text class="xxsmall">30 DAKİKA ÖNCE</custom-text>
     </div>
@@ -89,6 +92,33 @@ export default {
     IconMore,
     CustomText,
     Avatar
+  },
+
+  props: {
+    userName: {
+      type: String,
+      default: 'brkysever'
+    },
+    avatarUrl: {
+      type: String,
+      default: 'https://i.imgur.com/xNmrE1v.jpg'
+    },
+    location: {
+      type: String,
+      default: "Sant'Andrea della Valle"
+    },
+    media: {
+      type: String,
+      required: true
+    },
+    totalCommentCount: {
+      type: Number,
+      default: 0
+    },
+    lastComments: {
+      type: Array,
+      default: () => []
+    }
   }
 }
 </script>
@@ -98,6 +128,7 @@ export default {
   border-radius: 3px;
   border: 1px solid rgb(var(--b6a));
   background-color: white;
+  margin-bottom: 20px;
 }
 
 .section {
