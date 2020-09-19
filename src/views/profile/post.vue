@@ -14,92 +14,103 @@
         @click="showModal = false"
       ></div>
     </transition>
+
+    <modal title="asd">
+      saduhfauisdf
+
+      <template #slotname>
+        <p>slotname</p>
+      </template>
+    </modal>
+
     <transition name="slide" appear>
-      <div class="modal" v-if="showModal">
+      <div class="modal post-details" v-if="showModal">
         <img
           class="image1"
           src="https://images.unsplash.com/photo-1600132012021-47de01ca0705?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixlib=rb-1.2.1&q=80&w=304"
         />
-        <div class="modalAvatar">
-          <Avatar />
-          <CustomText tag="b" class="miniNick">brkysever</CustomText>
-        </div>
-        <div class="hrModal"></div>
-        <div class="friendsProfile">
-          <img
-            class="user"
-            src="https://randomuser.me/api/portraits/women/21.jpg"
-            alt=""
-          />
-          <img
-            class="user"
-            src="https://randomuser.me/api/portraits/men/53.jpg"
-            alt=""
-          />
-          <img
-            class="user"
-            src="https://randomuser.me/api/portraits/women/43.jpg"
-            alt=""
-          />
-          <img
-            class="user"
-            src="https://randomuser.me/api/portraits/men/13.jpg"
-            alt=""
-          />
-        </div>
-        <div class="profileName">
-          <CustomText size="small" tag="b" class="nt"
-            >n.szr <CustomText> 👍</CustomText>
-          </CustomText>
+        <div>
+          <div class="modalAvatar">
+            <Avatar />
+            <CustomText tag="b" class="miniNick">brkysever</CustomText>
+          </div>
+          <div class="hrModal"></div>
+          <div class="friendsProfile">
+            <img
+              class="user"
+              src="https://randomuser.me/api/portraits/women/21.jpg"
+              alt=""
+            />
+            <img
+              class="user"
+              src="https://randomuser.me/api/portraits/men/53.jpg"
+              alt=""
+            />
+            <img
+              class="user"
+              src="https://randomuser.me/api/portraits/women/43.jpg"
+              alt=""
+            />
+            <img
+              class="user"
+              src="https://randomuser.me/api/portraits/men/13.jpg"
+              alt=""
+            />
+          </div>
+          <div class="profileName">
+            <CustomText size="small" tag="b" class="nt"
+              >n.szr <CustomText> 👍</CustomText>
+            </CustomText>
 
-          <CustomText size="small" tag="b" class="nt"
-            >kanye.east <CustomText>🌹</CustomText></CustomText
-          >
+            <CustomText size="small" tag="b" class="nt"
+              >kanye.east <CustomText>🌹</CustomText></CustomText
+            >
 
-          <CustomText size="small" tag="b" class="nt"
-            >nicole.z <CustomText>🤔</CustomText></CustomText
-          >
-          <CustomText size="small" tag="b" class="nt"
-            >frank-white <CustomText>😎👌 😍🕶️👌</CustomText></CustomText
-          >
-        </div>
-        <div class="profileTime">
-          <CustomText class="pT" size="small">
-            <CustomText size="xsmall">79h</CustomText> 1beğenme
-            Yanıtla</CustomText
-          >
-          <CustomText class="pT" size="small">
-            <CustomText size="xsmall">78h</CustomText> 3beğenme
-            Yanıtla</CustomText
-          ><CustomText class="pT" size="small">
-            <CustomText size="xsmall">77h</CustomText> 4beğenme
-            Yanıtla</CustomText
-          ><CustomText class="pT" size="small">
-            <CustomText size="xsmall">69h</CustomText> 2beğenme
-            Yanıtla</CustomText
-          >
-        </div>
-        <div class="icons">
-          <button type="button">
-            <IconLike />
-          </button>
-          <button type="button">
-            <IconComment />
-          </button>
-          <button type="button">
-            <IconDirect />
-          </button>
-        </div>
-        <div class="liker">
-          <CustomText
-            ><CustomText tag="b">arzum.sever</CustomText> ve
-            <CustomText tag="b">diğer</CustomText> kişiler beğendi</CustomText
-          >
-        </div>
-        <div class="datePhoto">
-          <CustomText size="xsmall">
-            15 Ağustos 2020
-          </CustomText>
+            <CustomText size="small" tag="b" class="nt"
+              >nicole.z <CustomText>🤔</CustomText></CustomText
+            >
+            <CustomText size="small" tag="b" class="nt"
+              >frank-white <CustomText>😎👌 😍🕶️👌</CustomText></CustomText
+            >
+          </div>
+          <div class="profileTime">
+            <CustomText class="pT" size="small">
+              <CustomText size="xsmall">79h</CustomText> 1beğenme
+              Yanıtla</CustomText
+            >
+            <CustomText class="pT" size="small">
+              <CustomText size="xsmall">78h</CustomText> 3beğenme
+              Yanıtla</CustomText
+            ><CustomText class="pT" size="small">
+              <CustomText size="xsmall">77h</CustomText> 4beğenme
+              Yanıtla</CustomText
+            ><CustomText class="pT" size="small">
+              <CustomText size="xsmall">69h</CustomText> 2beğenme
+              Yanıtla</CustomText
+            >
+          </div>
+          <div class="icons">
+            <button type="button">
+              <IconLike />
+            </button>
+            <button type="button">
+              <IconComment />
+            </button>
+            <button type="button">
+              <IconDirect />
+            </button>
+          </div>
+          <div class="liker">
+            <CustomText
+              ><CustomText tag="b">arzum.sever</CustomText> ve
+              <CustomText tag="b">diğer</CustomText> kişiler beğendi</CustomText
+            >
+          </div>
+          <div class="datePhoto">
+            <CustomText size="xsmall">
+              15 Ağustos 2020
+            </CustomText>
+          </div>
         </div>
       </div>
     </transition>
@@ -153,6 +164,8 @@ import IconComment from '@/icons/comment.svg'
 import IconDirect from '@/icons/direct.svg'
 import Avatar from '@/components/Avatar'
 import CustomText from '@/components/CustomText'
+import Modal from '@/components/Modal'
+
 export default {
   name: 'ProfilePost',
   components: {
@@ -160,7 +173,8 @@ export default {
     CustomText,
     IconDirect,
     IconLike,
-    IconComment
+    IconComment,
+    Modal
   },
   data() {
     return {
@@ -171,19 +185,20 @@ export default {
 </script>
 
 <style>
+.post-details {
+  display: flex;
+}
+
 .datePhoto {
-  position: absolute;
   left: 660px;
   bottom: 60px;
   color: gray;
 }
 .liker {
-  position: absolute;
   left: 660px;
   bottom: 80px;
 }
 .icons {
-  position: absolute;
   left: 660px;
   bottom: 100px;
 
@@ -192,21 +207,19 @@ export default {
   }
 }
 .hrModal {
-  position: absolute;
   top: 70px;
   left: 655px;
   width: 343px;
   box-shadow: 0px 0px 1px 1px rgba(231, 231, 231, 0.86);
 }
 .miniNick {
-  position: absolute;
   left: 55px;
   bottom: 20px;
 }
 .modalAvatar {
   width: 45px;
   height: 45px;
-  position: absolute;
+
   left: 662px;
   bottom: 550px;
 }
@@ -220,19 +233,18 @@ export default {
 .profileTime {
   display: flex;
   flex-flow: column;
-  position: absolute;
+
   left: 720px;
   bottom: 210px;
 }
 .profileName {
   display: flex;
   flex-direction: column;
-  position: absolute;
+
   left: 720px;
   bottom: 230px;
 }
 .friendsProfile {
-  position: absolute;
   left: 670px;
   bottom: 245px;
   display: flex;
