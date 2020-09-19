@@ -75,12 +75,21 @@
           >
         </div>
       </transition>
+      <div class="followers">
+        <CustomText class="fn" tag="b">9</CustomText>
+        <CustomText class="fs">gönderi </CustomText>
+        <CustomText class="fn" tag="b">152</CustomText>
+        <CustomText class="fs">takipçi</CustomText>
+        <CustomText class="fn" tag="b">359</CustomText>
+        <CustomText class="fs">takip</CustomText>
+      </div>
     </div>
-    <div id="nav">
-      <router-link to="/profile">Post</router-link> |
-      <router-link to="/profile/igtv">IGTV</router-link> |
-      <router-link to="/profile/save">Save</router-link> |
-      <router-link to="/profile/tag">Tag</router-link>
+    <div class="hr"></div>
+    <div class="nav">
+      <router-link class="rL" to="/profile">Post</router-link>
+      <router-link class="rL" to="/profile/igtv">IGTV</router-link>
+      <router-link class="rL" to="/profile/save">Save</router-link>
+      <router-link class="rL" to="/profile/tag">Tag</router-link>
     </div>
 
     <router-view />
@@ -108,6 +117,74 @@ export default {
 </script>
 
 <style scoped>
+.hr {
+  position: relative;
+  top: 75px;
+  max-width: 100%;
+  box-shadow: 0px 0px 1px 1px rgba(231, 231, 231, 0.86);
+  @media (--t) {
+    position: relative;
+    top: 100px;
+    max-width: 100%;
+    box-shadow: 0px 0px 1px 1px rgba(231, 231, 231, 0.86);
+  }
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-right: 60px;
+  @media (--t) {
+    display: flex;
+    justify-content: center;
+    padding-top: 110px;
+    padding-right: 100px;
+  }
+}
+.rL {
+  font-weight: lighter;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-size: 17px;
+  padding-left: 60px;
+  @media (--t) {
+    font-weight: lighter;
+    color: rgba(var(--i1d, 38, 38, 38), 1);
+    font-size: 17px;
+    padding-left: 100px;
+  }
+}
+.fn {
+  cursor: pointer;
+  padding-right: 3px;
+  font-size: 13px;
+  @media (--t) {
+    padding-right: 3px;
+    font-size: 15px;
+  }
+}
+.fs {
+  cursor: pointer;
+  padding-right: 15px;
+  font-weight: lighter;
+  font-size: 12px;
+  @media (--t) {
+    padding-right: 15px;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+}
+.followers {
+  display: flex;
+  position: relative;
+  right: 210px;
+  top: 70px;
+  @media (--t) {
+    display: flex;
+    position: relative;
+    right: 315px;
+    top: 50px;
+  }
+}
 .profileCard {
   display: flex;
 }
@@ -155,7 +232,6 @@ export default {
     padding: 25px;
   }
 }
-
 .modal-overlay {
   position: absolute;
   top: 0;

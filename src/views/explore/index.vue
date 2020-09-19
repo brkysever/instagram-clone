@@ -33,10 +33,6 @@ export default {
 </script>
 
 <style>
-* {
-  box-sizing: border-box;
-}
-
 .container {
   display: flex;
   align-items: center;
