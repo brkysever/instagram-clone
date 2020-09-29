@@ -44,12 +44,12 @@
     </div>
 
     <div class="view-count section">
-      <custom-text tag="b">1.345 beğenme</custom-text>
+      <custom-text tag="b"> {{ totalLike }} beğenme</custom-text>
     </div>
 
     <div class="view-count section">
-      <custom-text tag="b">brkysever </custom-text>
-      <custom-text>Sant'Andrea della Valle</custom-text>
+      <custom-text tag="b">{{ userName }} </custom-text>
+      <custom-text> {{ myComment }}</custom-text>
     </div>
 
     <div class="comment section" v-if="totalCommentCount">
@@ -66,7 +66,7 @@
     </div>
 
     <div class="comment section">
-      <custom-text class="xxsmall">30 DAKİKA ÖNCE</custom-text>
+      <custom-text class="xxsmall"> {{ date }}</custom-text>
     </div>
 
     <br />
@@ -97,15 +97,15 @@ export default {
   props: {
     userName: {
       type: String,
-      default: 'brkysever'
+      required: true
     },
     avatarUrl: {
       type: String,
-      default: 'https://i.imgur.com/xNmrE1v.jpg'
+      required: true
     },
     location: {
       type: String,
-      default: "Sant'Andrea della Valle"
+      required: true
     },
     media: {
       type: String,
@@ -118,6 +118,18 @@ export default {
     lastComments: {
       type: Array,
       default: () => []
+    },
+    date: {
+      type: String,
+      required: true
+    },
+    myComment: {
+      type: String,
+      required: true
+    },
+    totalLike: {
+      type: String,
+      default: '0'
     }
   }
 }
